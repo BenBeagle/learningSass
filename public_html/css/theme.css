@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Lato:400,700|Rubik:400,700&display=swap&subset=latin-ext");
-.btn-default, .btn-danger, .btn-success, .btn-warning, .btn-info, .btn-dark {
+.btn-dark, .btn-info, .btn-warning, .btn-success, .btn-danger, .btn-default {
   display: inline-block;
   padding: 10px 25px;
   border: none;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
+  border-radius: 5px 0 5px 0;
+  -moz-border-radius: 5px 0 5px 0;
+  -webkit-border-radius: 5px 0 5px 0;
+  -o-border-radius: 5px 0 5px 0;
   cursor: pointer;
 }
 
@@ -14,54 +14,48 @@
   background-color: rgba(68, 68, 68, 0.8);
   color: #ffffff;
 }
-
 .btn-default:hover {
-  background-color: #2b2b2b;
+  background-color: rgb(42.5, 42.5, 42.5);
 }
 
 .btn-danger {
   background-color: #f00008;
   color: #ffffff;
 }
-
 .btn-danger:hover {
-  background-color: #bd0006;
+  background-color: rgb(189, 0, 6.3);
 }
 
 .btn-success {
   background-color: #18b304;
   color: #ffffff;
 }
-
 .btn-success:hover {
-  background-color: #118103;
+  background-color: rgb(17.3114754098, 129.1147540984, 2.8852459016);
 }
 
 .btn-warning {
   background-color: #f77a05;
   color: #ffffff;
 }
-
 .btn-warning:hover {
-  background-color: #118103;
+  background-color: rgb(17.3114754098, 129.1147540984, 2.8852459016);
 }
 
 .btn-info {
   background-color: #09e0b1;
   color: #000000;
 }
-
 .btn-info:hover {
-  background-color: #07af8a;
+  background-color: rgb(7.0300429185, 174.9699570815, 138.2575107296);
 }
 
 .btn-dark {
   background-color: #000000;
   color: #ffffff;
 }
-
 .btn-dark:hover {
-  background-color: #1a1a1a;
+  background-color: rgb(25.5, 25.5, 25.5);
 }
 
 /* FONT PROPERTY*/
@@ -73,10 +67,8 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -111,12 +103,9 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
@@ -124,10 +113,8 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -144,12 +131,9 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -167,10 +151,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -220,14 +202,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -235,8 +213,7 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input {
-  /* 1 */
+input { /* 1 */
   overflow: visible;
 }
 
@@ -245,8 +222,7 @@ input {
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
 
@@ -254,9 +230,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -264,9 +240,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -275,9 +251,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -295,18 +271,12 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
@@ -327,19 +297,17 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -347,17 +315,15 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-decoration {
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -366,10 +332,8 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /* Interactive
@@ -444,23 +408,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-  padding: 30px 0;
+  padding: 30px 0 30px;
   background-color: #8a059e;
 }
-
 header .branding {
   text-align: center;
 }
-
 header .branding a {
   color: #ffffff;
 }
-
 header nav ul {
   list-style: none;
   padding-left: 0;
 }
-
 header nav ul li a {
   display: block;
   padding: 5px 0;
@@ -470,9 +430,8 @@ header nav ul li a {
   text-transform: uppercase;
   font-weight: 700;
 }
-
 header nav ul li a:hover, header nav ul li a.active {
-  color: #25e807;
+  color: rgb(36.7331288344, 232.1533742331, 7.3466257669);
 }
 
 @media (min-width: 768px) {
@@ -488,93 +447,82 @@ header nav ul li a:hover, header nav ul li a.active {
     padding: 5px;
   }
 }
-
 @media (min-width: 992px) {
   header nav a {
     padding: 5px 15px !important;
   }
 }
+.home-section {
+  padding: 150px 0 150px;
+  background-color: #ffffff;
+}
 
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/*
-    Created on : Sep 13, 2019, 12:57:08 PM
-    Author     : frontend
-*/
 .about-section {
-  padding: 30px 0;
-  background: #ffffff;
+  padding: 30px 0 30px;
+  background-color: #ffffff;
 }
 
 .service-section {
-  padding: 30px 0;
+  padding: 30px 0 30px;
+  background-color: transparent;
 }
 
 .comment-section {
-  padding: 30px 0;
-  background: #ffffff;
+  padding: 30px 0 30px;
+  background-color: #ffffff;
+}
+.comment-section .comment-img img {
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .course-section {
-  padding: 50px 0;
+  padding: 30px 0 30px;
+  background-color: transparent;
 }
-
 .course-section table {
   border: 1px solid #000000;
   border-collapse: collapse;
   width: 100%;
 }
-
 .course-section table caption {
   text-align: left;
   font-style: italic;
 }
-
 .course-section table th, .course-section table td {
   border: 1px solid #000000;
   padding: 10px 5px;
 }
-
 .course-section table thead {
   background: #8a059e;
 }
-
 .course-section table thead th {
   color: #ffffff;
   border: 1px solid #ffffff;
 }
-
 .course-section table tbody tr:nth-of-type(even) {
   background-color: #ffffff;
 }
-
 .course-section table tbody tr:hover {
-  background-color: #c8c8c8;
+  background-color: rgb(199.75, 199.75, 199.75);
 }
 
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/*
-    Created on : Sep 13, 2019, 12:59:07 PM
-    Author     : frontend
-*/
+.contact-section {
+  padding: 150px 0 150px;
+  background-color: #ffffff;
+}
+
 footer {
-  padding: 30px 0;
+  padding: 30px 0 30px;
   background-color: #8a059e;
 }
-
 footer ul {
   list-style: none;
   padding-left: 0;
   margin-bottom: 30px;
 }
-
 footer ul a {
   display: block;
   padding: 5px 0;
@@ -584,11 +532,9 @@ footer ul a {
   color: #ffffff;
   font-size: 1.8rem;
 }
-
 footer ul a:hover, footer ul a.active {
-  color: #25e807;
+  color: rgb(36.7331288344, 232.1533742331, 7.3466257669);
 }
-
 footer .copyright {
   color: #ffffff;
   text-align: center;
