@@ -36,7 +36,7 @@
 
 .btn-warning {
   background-color: #f77a05;
-  color: #ffffff;
+  color: #000000;
 }
 .btn-warning:hover {
   background-color: rgb(17.3114754098, 129.1147540984, 2.8852459016);
@@ -472,10 +472,10 @@ header nav ul li a:hover, header nav ul li a.active {
   background-color: #ffffff;
 }
 .comment-section .comment-img img {
-  border-radius: 0px;
-  -moz-border-radius: 0px;
-  -webkit-border-radius: 0px;
-  -o-border-radius: 0px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .course-section {
@@ -499,7 +499,7 @@ header nav ul li a:hover, header nav ul li a.active {
   background: #8a059e;
 }
 .course-section table thead th {
-  color: #ffffff;
+  color: colorYik(#8a059e);
   border: 1px solid #ffffff;
 }
 .course-section table tbody tr:nth-of-type(even) {
